@@ -2,15 +2,34 @@
 <html>
 <head>
   <title>Blog | Junior Data Engineer</title>
+  <script>
+    // JavaScript function to filter blog posts based on search input
+    function searchBlogPosts() {
+      var input = document.getElementById("searchInput").value.toLowerCase();
+      var blogPosts = document.getElementsByClassName("blog-post");
+      
+      // Loop through each blog post and hide/show based on search input
+      for (var i = 0; i < blogPosts.length; i++) {
+        var title = blogPosts[i].getElementsByTagName("h2")[0].innerText.toLowerCase();
+        var summary = blogPosts[i].getElementsByTagName("p")[0].innerText.toLowerCase();
+        if (title.includes(input) || summary.includes(input)) {
+          blogPosts[i].style.display = "block";
+        } else {
+          blogPosts[i].style.display = "none";
+        }
+      }
+    }
+  </script>
 </head>
 <body>
   <h1>Blog</h1>
+  <input type="text" id="searchInput" placeholder="Search blog posts" onkeyup="searchBlogPosts()">
   <ul>
-    <li>
+    <li class="blog-post">
       <h2>Blog Post 1</h2>
       <p>Summary of Blog Post 1</p>
     </li>
-    <li>
+    <li class="blog-post">
       <h2>Blog Post 2</h2>
       <p>Summary of Blog Post 2</p>
     </li>
