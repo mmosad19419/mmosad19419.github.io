@@ -2,12 +2,17 @@
 <html>
 <head>
   <title>Blog | Junior Data Engineer</title>
+  <!-- Add Bootstrap CSS and JavaScript CDNs -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script>
     // JavaScript function to filter blog posts based on search input
     function searchBlogPosts() {
       var input = document.getElementById("searchInput").value.toLowerCase();
-      var blogPosts = document.getElementsByClassName("blog-post");
-      
+      var blogPosts = document.getElementsByClassName("carousel-item");
+
       // Loop through each blog post and hide/show based on search input
       for (var i = 0; i < blogPosts.length; i++) {
         var title = blogPosts[i].getElementsByTagName("h2")[0].innerText.toLowerCase();
@@ -24,16 +29,29 @@
 <body>
   <h1>Blog</h1>
   <input type="text" id="searchInput" placeholder="Search blog posts" onkeyup="searchBlogPosts()">
-  <ul>
-    <li class="blog-post">
-      <h2>Blog Post 1</h2>
-      <p>Summary of Blog Post 1</p>
-    </li>
-    <li class="blog-post">
-      <h2>Blog Post 2</h2>
-      <p>Summary of Blog Post 2</p>
-    </li>
-    <!-- Add more blog entries as needed -->
-  </ul>
+  <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#blogCarousel" data-slide-to="1"></li>
+      <!-- Add more indicators for additional blog posts -->
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <h2>Blog Post 1</h2>
+        <p>Summary of Blog Post 1</p>
+      </div>
+      <div class="carousel-item">
+        <h2>Blog Post 2</h2>
+        <p>Summary of Blog Post 2</p>
+      </div>
+      <!-- Add more carousel items for additional blog posts -->
+    </div>
+    <a class="carousel-control-prev" href="#blogCarousel" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#blogCarousel" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
 </body>
 </html>
