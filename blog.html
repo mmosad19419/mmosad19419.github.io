@@ -13,14 +13,17 @@
       var input = document.getElementById("searchInput").value.toLowerCase();
       var blogPosts = document.getElementsByClassName("carousel-item");
 
-      // Loop through each blog post and hide/show based on search input
+      // Hide all blog posts
+      for (var i = 0; i < blogPosts.length; i++) {
+        blogPosts[i].style.display = "none";
+      }
+
+      // Loop through each blog post and show/hide based on search input
       for (var i = 0; i < blogPosts.length; i++) {
         var title = blogPosts[i].getElementsByTagName("h2")[0].innerText.toLowerCase();
         var summary = blogPosts[i].getElementsByTagName("p")[0].innerText.toLowerCase();
         if (title.includes(input) || summary.includes(input)) {
           blogPosts[i].style.display = "block";
-        } else {
-          blogPosts[i].style.display = "none";
         }
       }
     }
