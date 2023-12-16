@@ -32,3 +32,61 @@ nav a:hover {
   background-color: #FFFF00; /* Yellow */
   color: #000000; /* Black */
 }
+
+#contact {
+  width: 50%; /* Set width for the contact section */
+  padding: 20px; /* Add some padding for better spacing */
+}
+
+#contact h2 {
+  color: #333; /* Header text color */
+}
+
+#contact p {
+  color: #666; /* Paragraph text color */
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact label {
+  margin-bottom: 8px;
+  color: #555; /* Label text color */
+}
+
+#contact input,
+#contact textarea {
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+#contact button.submit-button {
+  padding: 12px;
+  background-color: #007BFF; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+#profile {
+  flex: 1;
+  max-width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+#profile img {
+  max-width: 100%;
+  max-height: 250px;
+  border-radius: 50%;
+}
