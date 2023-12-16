@@ -33,9 +33,44 @@ nav a:hover {
   color: #000000; /* Black */
 }
 
-#contact {
-  width: 50%; /* Set width for the contact section */
+
+#welcome {
+  display: flex;
+}
+
+#profile {
+  max-width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+#profile img {
+  max-width: 100%;
+  max-height: 250px;
+  border-radius: 50%;
+}
+
+#welcome-content {
+  max-width: 50%;
   padding: 20px; /* Add some padding for better spacing */
+  background-color: #fff; /* Set background color */
+}
+
+#welcome-content h2 {
+  color: #333; /* Header text color */
+}
+
+#welcome-content p {
+  color: #666; /* Paragraph text color */
+}
+
+#contact {
+  padding: 20px;
+  width: 100%; /* Set width for the contact section */
+  background-color: #eee; /* Set background color */
 }
 
 #contact h2 {
@@ -73,20 +108,4 @@ nav a:hover {
   border-radius: 4px;
   cursor: pointer;
   font-size: 18px;
-}
-
-#profile {
-  flex: 1;
-  max-width: 50%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f0f0f0;
-}
-
-#profile img {
-  max-width: 100%;
-  max-height: 250px;
-  border-radius: 50%;
 }
