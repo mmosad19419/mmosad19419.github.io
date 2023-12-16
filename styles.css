@@ -38,19 +38,10 @@ nav a:hover {
   display: flex;
 }
 
-#profile {
-  max-width: 50%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f0f0f0;
-}
-
 #profile img {
   max-width: 100%;
   max-height: 250px;
-  border-radius: 50%;
+  border-radius: 10%;
 }
 
 #welcome-content {
