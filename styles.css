@@ -109,3 +109,23 @@ nav a:hover {
   cursor: pointer;
   font-size: 18px;
 }
+
+footer {
+  background-color: #333; /* Footer background color */
+  color: #fff; /* Text color */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#social-links a,
+#email-link a {
+  color: #fff; /* Link text color */
+  text-decoration: none;
+  margin-right: 15px; /* Add space between links */
+}
+
+#social-links a:hover,
+#email-link a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
