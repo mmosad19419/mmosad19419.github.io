@@ -3,6 +3,7 @@ body {
   background-color: #000;
   color: #fff;
   font-family: 'Arial', sans-serif;
+  margin: 0; /* Remove default body margin */
 }
 
 /* Navigation bar styling */
@@ -43,16 +44,57 @@ section {
 #welcome {
   background-color: #fff;
   color: #000;
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between profile and content */
+  align-items: center; /* Center vertically */
 }
 
 #profile img {
   max-width: 100%;
   height: auto;
+  order: 2; /* Move the image to the right */
+}
+
+#welcome-content {
+  width: 60%; /* Adjust the content width */
 }
 
 #contact {
   background-color: #fff;
   color: #000;
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange items in a column */
+  align-items: center; /* Center items horizontally */
+}
+
+#contact-form {
+  width: 50%; /* Adjust the form width */
+  max-width: 400px; /* Set a maximum width */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #669999;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #003333;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #006666;
 }
 
 /* Footer styling */
