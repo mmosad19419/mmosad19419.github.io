@@ -1,60 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Blog | Junior Data Engineer</title>
-  <!-- Add Bootstrap CSS and JavaScript CDNs -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <script>
-    // JavaScript function to filter blog posts based on search input
-    function searchBlogPosts() {
-      var input = document.getElementById("searchInput").value.toLowerCase();
-      var blogPosts = document.getElementsByClassName("carousel-item");
-
-      // Hide all blog posts
-      for (var i = 0; i < blogPosts.length; i++) {
-        blogPosts[i].style.display = "none";
-      }
-
-      // Loop through each blog post and show/hide based on search input
-      for (var i = 0; i < blogPosts.length; i++) {
-        var title = blogPosts[i].getElementsByTagName("h2")[0].innerText.toLowerCase();
-        var summary = blogPosts[i].getElementsByTagName("p")[0].innerText.toLowerCase();
-        if (title.includes(input) || summary.includes(input)) {
-          blogPosts[i].style.display = "block";
-        }
-      }
-    }
-  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Post Title</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Blog</h1>
-  <input type="text" id="searchInput" placeholder="Search blog posts" onkeyup="searchBlogPosts()">
-  <div id="blogCarousel" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#blogCarousel" data-slide-to="1"></li>
-      <!-- Add more indicators for additional blog posts -->
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <h2>Blog Post 1</h2>
-        <p>Summary of Blog Post 1</p>
-      </div>
-      <div class="carousel-item">
-        <h2>Blog Post 2</h2>
-        <p>Summary of Blog Post 2</p>
-      </div>
-      <!-- Add more carousel items for additional blog posts -->
-    </div>
-    <a class="carousel-control-prev" href="#blogCarousel" data-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </a>
-    <a class="carousel-control-next" href="#blogCarousel" data-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </a>
-  </div>
+
+  <header>
+    </header>
+
+  <main>
+    <article class="blog-post">
+      <h1>Blog Post Title</h1>
+      <img src="blog-post-image.jpg" alt="Blog post image">
+      <p>Blog post content...</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </article>
+  </main>
+
+  <footer>
+    </footer>
+
 </body>
 </html>

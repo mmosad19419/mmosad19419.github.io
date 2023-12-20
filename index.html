@@ -1,63 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Mohamed Mosad Navigation Bar</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name or Brand</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
-
-
-<section id="welcome">
-    <div id="profile">
-        <img src="./statics/images/mohamed_mosad_profile.jpeg" alt="Your Name's Profile Image">
+  <header>
+    <div class="container">
+      <a href="/" class="logo">Your Logo</a>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <div id="welcome-content">
-        <h2>Welcome to My Website</h2>
-        <p>Thank you for visiting. Feel free to explore and reach out!</p>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <img src="your-hero-image.jpg" alt="Your captivating hero image">
+      <h1>Your Introductory Headline</h1>
+      <p>A brief description of your expertise and passions.</p>
+      <button>Learn More</button>
     </div>
-</section>
+  </section>
 
-<section id="contact">
-    <h2>Contact Us</h2>
-    <p>Have questions or feedback? Reach out to us!</p>
+  <section class="featured-posts">
+    <h2>Featured Posts</h2>
+    <div class="container">
+      <article class="featured-post">
+        <img src="featured-post-1.jpg" alt="Featured post image">
+        <h3>Post Title 1</h3>
+        <p>Short excerpt...</p>
+        <a href="/blog/post-1">Read More</a>
+      </article>
+      </div>
+  </section>
 
-    <form action="contact.php" method="post" id="contact-form">
-        <!-- Your form fields go here -->
-        <label for="name">Your Name:</label>
-        <input type="text" id="name" name="name" required>
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <div class="container">
+      </div>
+  </section>
 
-        <label for="email">Your Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Your Message:</label>
-        <textarea id="message" name="message" required></textarea>
-
-        <button type="submit" class="submit-button">Send Message</button>
-    </form>
-</section>
-
-<footer>
-    <div id="social-links">
-        <a href="https://www.linkedin.com/in/mmosad/" target="LinkedIn" rel="Mohamed Mosad LinkedIn Profile">Facebook</a>
-        <!-- <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">Twitter</a>
-        <a href="https://www.instagram.com/yourusername" target="_blank" rel="noopener noreferrer">Instagram</a> -->
+  <footer>
+    <div class="container">
+      <p>&copy; Your Name or Brand 2023</p>
     </div>
-    <div id="email-link">
-        <a href="mmosad19419@gmail.com">Email me</a>
-    </div>
-</footer>
-
+  </footer>
 
 </body>
 </html>
